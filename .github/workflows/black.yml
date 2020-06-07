@@ -6,9 +6,6 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-
-      - name: Install black
-        run: pip install black 
-
-      - name: Linting with black
-        run: python -m balck .
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - uses: psf/black@stable

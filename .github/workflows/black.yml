@@ -5,7 +5,12 @@ on: [push, pull_request]
 jobs:
   lint:
     runs-on: ubuntu-latest
+
     steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
-      - uses: psf/black@stable
+      # Runs a single command using the runners shell
+
+      - name: Black Code Formatter
+        uses: lgeiger/black-action@v1.0.1
+        

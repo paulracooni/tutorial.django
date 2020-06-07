@@ -6,17 +6,20 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('fcuser', '0002_auto_20200529_2229'),
+        ("fcuser", "0002_auto_20200529_2229"),
     ]
 
     operations = [
         migrations.AlterModelOptions(
-            name='fcuser',
-            options={'verbose_name': '패스트캠퍼스 사용자', 'verbose_name_plural': '패스트캠퍼스 사용자들'},
+            name="fcuser",
+            options={
+                "verbose_name": "패스트캠퍼스 사용자",
+                "verbose_name_plural": "패스트캠퍼스 사용자들",
+            },
         ),
         migrations.AlterField(
-            model_name='fcuser',
-            name='username',
-            field=models.CharField(max_length=64, verbose_name='사용자명'),
+            model_name="fcuser",
+            name="username",
+            field=models.CharField(max_length=64, verbose_name="사용자명"),
         ),
     ]

@@ -6,14 +6,18 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('fcuser', '0003_auto_20200531_1046'),
+        ("fcuser", "0003_auto_20200531_1046"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='fcuser',
-            name='useremial',
-            field=models.EmailField(default='PleaseChangeYourEmail@paulkim.net', max_length=128, verbose_name='사용자이메일'),
+            model_name="fcuser",
+            name="useremial",
+            field=models.EmailField(
+                default="PleaseChangeYourEmail@paulkim.net",
+                max_length=128,
+                verbose_name="사용자이메일",
+            ),
             preserve_default=False,
         ),
     ]

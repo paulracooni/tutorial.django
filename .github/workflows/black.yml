@@ -11,4 +11,4 @@ jobs:
         uses: lgeiger/black-action@v1.0.1
 
       - name: Lint with black
-        run: black .
+        run: python -m black .

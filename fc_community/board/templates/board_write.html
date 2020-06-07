@@ -13,15 +13,15 @@
 					{% ifequal field.name 'contents' %}
 						<textarea class="form-control" name="{{ field.name }}" placeholder="{{ field.label }}"></textarea>
 					{% else %}
-						<input  class="form-control" 
-										type="{{ field.field.widget.input_type }}" 
-										id="{{ field.id_for_label }}" 
+						<input  class="form-control"
+										type="{{ field.field.widget.input_type }}"
+										id="{{ field.id_for_label }}"
 										name="{{ field.name }}"
 										placeholder="{{ field.label }}">
 					{% endifequal %}
 				</div>
-				{% if field.errors %}			
-				<sapn style="color: red">{{ field.errors }}</sapn>		
+				{% if field.errors %}
+				<sapn style="color: red">{{ field.errors }}</sapn>
 				{% endif %}
 			{% endfor %}
 			<button type="submit" class="btn btn-primary">등록</button>

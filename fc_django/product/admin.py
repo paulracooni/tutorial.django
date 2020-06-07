@@ -3,6 +3,11 @@ from .models import Product
 
 # Register your models here.
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('name', 'price', 'stuck', )
+    list_display = (
+        "name",
+        "price",
+        "stuck",
+    )
+
 
 admin.site.register(Product, ProductAdmin)

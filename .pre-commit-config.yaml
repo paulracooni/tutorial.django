@@ -1,6 +1,0 @@
-repos:
-  - repo: https://github.com/paulracooni/tutorial.django
-    rev: master
-    hooks:
-      - id: black
-        language_version: python3.7
